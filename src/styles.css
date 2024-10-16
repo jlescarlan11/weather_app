@@ -1,3 +1,111 @@
-* {
-  background-color: aqua;
+/* General Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#app {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Header Styles */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Loading Component */
+#loading {
+  font-size: 1.2rem;
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
+
+/* Weather Information Styles */
+#weather-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#weather-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#weather-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+#weather-info img {
+  vertical-align: middle;
+}
+
+#weather-info span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 480px) {
+  #app {
+    padding: 20px;
+    width: 90%;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
 }
