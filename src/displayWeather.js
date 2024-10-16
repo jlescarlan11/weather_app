@@ -9,7 +9,10 @@ export default (weather) => {
         <h2>${weather.location}</h2>
         <div style="display: flex; align-items: center; justify-content: center;">
           <img src="${iconUrl}" alt="weather-icon" style="width: 60px; height: 60px; margin-right: 15px;">
-          <span style="font-size: 2rem;">${weather.temperature}°C</span>
+          <span style="font-size: 2rem;">${(
+            (weather.temperature - 32) *
+            (5 / 9)
+          ).toFixed(2)}°C</span>
         </div>
         <p>${weather.description}</p>
         <p>${weather.forecastSummary}</p>
